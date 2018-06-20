@@ -32,6 +32,7 @@ export default {
         );
         const movies = await res.json();
         this.movies = movies.results;
+        console.log(this.movies);
       } catch(e) {
         console.log(e);
       }
